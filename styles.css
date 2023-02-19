@@ -1,0 +1,85 @@
+/* Basic CSS reset */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 10rem;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  /* button {
+    width: 14vw;
+    height: 10vh;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    font-size: 1.8rem;
+  } */
+
+button {
+	border-radius:10px;
+    border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-size: 1.7rem;
+	font-family:Arial;
+	font-weight:bold;
+	padding:12px 44px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#startBtn {
+    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+}
+
+#startBtn:active {
+	position:relative;
+	top:1px;
+    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+
+#resetBtn {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+}
+
+#resetBtn:active {
+	position:relative;
+	top:1px;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+}
+
